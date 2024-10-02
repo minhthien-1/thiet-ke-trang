@@ -4,7 +4,7 @@
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
         body{
-                background-color: dimgray;
+                background-color: lightblue;
             }
     #container{
         border:2px solid #ff0000;
@@ -13,12 +13,13 @@
         margin: 0 auto;
     }
     header{
-        background-color:burlywood;
+        background-color:steelblue;
         border: 2px solid #000000;
         padding: 10px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        align-content:center;
     }
     logo img{
         height: 40px;
@@ -34,9 +35,10 @@
     }
     nav ul li a{
         text-decoration: none;
-        color: black;
+        color: whitesmoke;
         font-weight: bold;
     }
+    
     section{
         background-color: whitesmoke;
         min-height: 300px;
@@ -52,16 +54,30 @@
 <body>
     <div id="container">
         <header>
-            <div class="logo">
+            @*<div class="logo">
                 <img src="~/Content/ha/gau2.jpg" alt="logo" width="200">
-            </div>
+            </div>*@
             <nav>
                 <ul>
                     <li>
-                        <a href="~/Home/Test"> Trang Chủ </a>
-                        <a href="~/Product/ProductDetail"> Sản phẩm </a>
-                        <a href="~/Product/ShoppingCart"> Giỏ hàng </a>
-                        <a href="~/Home/Contact"> Liên hệ </a>
+                        
+                        <a href="~/Home/Test">GauBong.com<img src=""/></a>
+
+                    </li>
+                    <li>
+                        <a href=""></a><button>Danh mục sản phẩm<i class="fa-thin fa-list"></i></button>
+                    </li>
+                    <li>
+                        <input type="text" /><i class="fa-solid fa-magnifying-glass"></i>
+                    </li>
+                    <li>
+                        <a href=""></a><button>@*<i class="fa-solid fa-cart-shopping">*@Giỏ hàng@*</i*@</button>
+                    </li>
+                    <li>
+                        <a href=""></a><button>Danh sách các sản phẩm<i class="fa-solid fa-caret-down"></i></button>
+                    </li>
+                    <li>
+                        <a href=""></a><button>Đăng ký/Đăng nhập</button>
                     </li>
                 </ul>
             </nav>

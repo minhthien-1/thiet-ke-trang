@@ -3,10 +3,10 @@
 }
 <style type="text/css">
     #banner{
-        background-image: url("../Content/ha/hinhniengau.jpg");
+        background-image: url("../Content/ha/hinhnen.jpg");
         background-size: cover;
         background-position: center;
-        height: 200px;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -19,16 +19,16 @@
     }
     .banner-content h2{
         font-size: 2.5rem;
-        color: sandybrown;
+        color: darkblue;
     }
     .banner-content p{
         font-size: 2rem;
-        color:saddlebrown;
+        color:black;
     }
     .btn{
         display: inLine-block;
         padding: 5px 20px;
-        background-color:darkorange;
+        background-color:darkblue;
         color: white;
         text-decoration:none;
         font-weight: bold;
@@ -38,7 +38,7 @@
     }
     #featurProd h2{
         font-size: 2rem;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .productContainer{
         display: flex;
@@ -46,7 +46,7 @@
         gap: 30px;
     }
     .Product-item{
-        width: 200px;
+        width: 250px;
     }
     .productDesc{
         font: arial;
@@ -65,7 +65,50 @@
         font-weight: bold;
     }
     .Product-item img{
-       max-width: 150px;
+       max-width: 200px;
+    }
+    .product-use img{
+        width:50px;
+        
+    }
+    .productContainer2 {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+    .product-use h3 {
+        font-size: 20px;
+        color: black;
+        margin: 10px 0px;
+       
+        
+    }
+    .product-use{
+        width:200px;
+    }
+    #tienich {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .ProductContainer3 img{
+        max-width: 150px;
+    }
+    .ProductContainer3 {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    .anh2 {
+        background-image: url('../../content/ha/nen-xanh-58bw2u0.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        color: cornsilk
     }
 </style>
 <section id="banner">
@@ -75,8 +118,37 @@
         <a href="#" class="btn">Bắt đầu mua sắm</a>
     </div>
 </section>
-    <section id="search" class="content-section">
-
+    <section id="tienich" class="content-section">
+        <div class="productContainer2">
+            <div class="product-use">
+                @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
+                <img src="~/Content/ha/ghtn2.PNG" />
+                <h3><a href="">Giao hàng tận nơi</a></h3>
+            </div>
+            <div class="product-use">
+                @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
+                <img src="~/Content/ha/bocquagiare.PNG" />
+                <h3><a href="">Bóc quà giá rẻ</a></h3>
+            </div>
+            <div class="product-use">
+                @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
+                <img src="~/Content/ha/tangthiepmienphi.PNG" />
+                <h3><a href="">Tặng thiệp miễn phí</a></h3>
+            </div>
+            <div class="product-use">
+                @*<img src="~/Content/ha/giat-gau-bog.png" />*@
+                <img src="~/Content/ha/giat.PNG" />
+                <h3><a href="">Giặt gấu bông</a></h3>
+            </div>
+            <div class="product-use">
+                @*<img src="~/Content/ha/nen-nho-gau.png" />*@
+                <img src="~/Content/ha/nennho.PNG" />
+                <h3><a href="">Nén nhỏ gấu</a></h3>
+            </div>
+        </div>
+        <div class="anh2">
+            
+        </div>
     </section>
     <section id="featurProd" class="content-section">
         <h2>Sản phẩm nổi bật</h2>
@@ -84,21 +156,54 @@
             <div class="Product-item">
               <img src="~/Content/ha/gau_bong_cute_4d.jpg" />
               <h3>Gấu bông màu nâu</h3>
-              <p class="productDesc">phổ biến,giá sinh viên</p>
+              <p class="productDesc">phổ biến</p>
               <p class="productPrice">100.000</p>
             </div>
             <div class="Product-item">
               <img src="~/Content/ha/gau4.jpg" />
               <h3>Gấu teddy</h3>
-              <p class="productDesc">siêu cấp dễ thương, giá sinh viên</p>
+              <p class="productDesc">dễ thương</p>
               <p class="productPrice">99.000</p>
             </div>
             <div class="Product-item">
               <img src="~/Content/ha/gaubongnho.jpg"  />
               <h3>Gấu bông nhỏ màu trắng</h3>
-              <p class="productDesc">xinh đẹp, hợp với các bạn nữ</p>
+              <p class="productDesc">xinh đẹpp>
               <p class="productPrice">150.000</p>
             </div>
+        </div>
+        <div class="ProductContainer3">
+            <div class="Product-item2">
+                <img src="~/Content/ha/gauhong.jpg" />
+                <h3>gấu bông màu hồng</h3>
+                <p class="productDesc">ưa nhìn</p>
+                <p class="productPrice">100.000</p>
+            </div>
+            <div class="Product-item2">
+                <img src="~/Content/ha/Gau-truc-om-tre-2.jpg" />
+                <h3>gấu trúc </h3>
+                <p class="productDesc">mềm mại</p>
+                <p class="productPrice">150.000</p>
+            </div>
+            <div class="Product-item2">
+                <img src="~/Content/ha/capypara0.jpg" />
+                <h3>gấu bông capypara</h3>
+                <p class="productDesc">theo chủ đề</p>
+                <p class="productPrice">120.000</p>
+            </div>
+            <div class="Product-item2">
+                <img src="~/Content/ha/gau-bong-stitch-xanh.jpg" />
+                <h3>gấu bông disney</h3>
+                <p class="productDesc">trẻ con</p>
+                <p class="productPrice">130.000</p>
+            </div>
+            <div class="Product-item2">
+                <img src="~/Content/ha/pikachu.jpg" />
+                <h3>gấu bông pokemon</h3>
+                <p class="productDesc">xinh xắn</p>
+                <p class="productPrice">140.000</p>
+            </div>
+
         </div>
     </section>
     <section id="productList">
