@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "bocquagiare";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<section class="entry-comments">
+    <header class="header">
+        <strong class="title">
+            Bình luận
+            <span class="amount">(1)</span>
+        </strong>
+    </header>
+    <ul class="comments parent-comments">
+        <li class="comment clearfix">
+            <i class="ion-person avatar"></i>
+            <div class="info">
+                <strong class="name">Đào trần đức</strong>
+                <a class="reply" href="javascript:void(0)" data-parent="8315"><i class="fa fa-reply icon"></i>Trả lời</a>
+                <p class="content">shop ở xuân thủy có nhận dịch vụ bọc quà giá rẻ khi mang thú bông đến không ạ</p>
+            </div>
+        </li>
+    </ul>
+    <form class="form-comment" action="" method="POST" data-gtm-form-interact-id="0">
+        <input type="hidden" name="action" value="willgroup_insert_comment">
+        <input type="hidden" name="post_id" value="7336">
+        <div class="row">
+            <div class="col-xs-12 col-sm-7 col-lg-8">
+                <div class="form-group">
+                    <textarea class="form-control" rows="5" name="comment" placeholder="Nội dung bình luận (*)"></textarea>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-5 col-lg-4">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" placeholder="Họ tên (*)" data-gtm-form-interact-field-id="0">
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" name="phone" placeholder="Số điện thoại (*)">
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Gửi bình luận</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</section>

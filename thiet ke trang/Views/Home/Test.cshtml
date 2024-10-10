@@ -11,11 +11,11 @@
         align-items: center;
         justify-content: center;
         vertical-align: middle;
-        color: cornsilk
+        color: cornsilk;
     }
     .banner-content{
         text-align: center;
-        color: cornsilk
+        color: cornsilk;
     }
     .banner-content h2{
         font-size: 2.5rem;
@@ -24,14 +24,6 @@
     .banner-content p{
         font-size: 2rem;
         color:black;
-    }
-    .btn{
-        display: inLine-block;
-        padding: 5px 20px;
-        background-color:darkblue;
-        color: white;
-        text-decoration:none;
-        font-weight: bold;
     }
     #featurProd{
         text-align: center;
@@ -80,9 +72,6 @@
         font-size: 20px;
         color: black;
         margin: 10px 0px;
-       
-       
-        
     }
     .product-use{
         width:200px;
@@ -109,31 +98,49 @@
         align-items: center;
         justify-content: center;
         vertical-align: middle;
-        color: cornsilk
+        color: cornsilk;
     }
     .product-use h3 a{
         text-decoration: none;
     }
-    
+    .h3 {
+        overflow: hidden;
+        width: 100%;
+        background-color: #000000;
+    }
+    .banner-content a {
+        display: inLine-block;
+        background-color: darkblue;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px;
+    }
+    section {
+        font-family: sans-serif;
+    }
 </style>
 <section id="banner">
     <div class="banner-content">
         <h2>Chào mừng đến với web bán gấu bông của tôi</h2>
         <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
-        <a href="#" class="btn">Bắt đầu mua sắm</a>
+        @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Product")
     </div>
+    
 </section>
+<br />
     <section id="tienich" class="content-section">
         <div class="productContainer2">
             <div class="product-use">
                 @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
-                <img src="~/Content/ha/ghtn2.PNG" />
-                <h3><a href="">Giao hàng tận nơi</a></h3>
+                <img src="~/Content/ha/ghtn2.PNG" /> <br />
+                <h3>@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Product")</h3>
             </div>
             <div class="product-use">
                 @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
                 <img src="~/Content/ha/bocquagiare.PNG" />
-                <h3><a href="">Bóc quà giá rẻ</a></h3>
+                <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Product")</h3>
             </div>
             <div class="product-use">
                 @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
@@ -152,7 +159,6 @@
             </div>
         </div>
         <div class="anh2">
-            
         </div>
     </section>
     <section id="featurProd" class="content-section">
@@ -173,7 +179,7 @@
             <div class="Product-item">
               <img src="~/Content/ha/gaubongnho.jpg"  />
               <h3>Gấu bông nhỏ màu trắng</h3>
-              <p class="productDesc">xinh đẹpp>
+              <p class="productDesc">xinh đẹp</p>
               <p class="productPrice">150.000</p>
             </div>
         </div>

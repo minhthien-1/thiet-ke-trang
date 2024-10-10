@@ -17,5 +17,17 @@ namespace thiet_ke_trang.Controllers
         {
             return View("hhhh");
         }
+        public ActionResult giaohangtannoi()
+        {
+            return View();
+        }
+        public ActionResult batdaumuasam()
+        {
+            return View();
+        }
+        public ActionResult bocquagiare()
+        {
+            return View();
+        }
     }
 }

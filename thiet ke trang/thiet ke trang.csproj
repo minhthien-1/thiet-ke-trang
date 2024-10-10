@@ -144,6 +144,19 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\images\01.jpg" />
+    <Content Include="Content\images\012.jpg" />
+    <Content Include="Content\images\013.jpg" />
+    <Content Include="Content\images\016.jpg" />
+    <Content Include="Content\images\02.jpg" />
+    <Content Include="Content\images\021.jpg" />
+    <Content Include="Content\images\022.jpg" />
+    <Content Include="Content\images\023.jpg" />
+    <Content Include="Content\images\024.jpg" />
+    <Content Include="Content\images\03.jpg" />
+    <Content Include="Content\images\04.jpg" />
+    <Content Include="Content\images\05.jpg" />
+    <Content Include="Content\images\06.jpg" />
     <Content Include="Content\ha\14408_gau-truc-om-tre-hoa-cm.jpg" />
     <Content Include="Content\ha\anh-mau-xanh-duong-42.jpg" />
     <Content Include="Content\ha\boc-qua-gia-re.png" />
@@ -170,6 +183,18 @@
     <Content Include="Content\ha\Screenshot_2024-10-02_205322.png" />
     <Content Include="Content\ha\tang-thiep-mien-phi.png" />
     <Content Include="Content\ha\tangthiepmienphi.PNG" />
+    <Content Include="Content\images\07.jpg" />
+    <Content Include="Content\images\08.jpg" />
+    <Content Include="Content\images\09.jpg" />
+    <Content Include="Content\images\capypara2.jpg" />
+    <Content Include="Content\images\capypara3.jpg" />
+    <Content Include="Content\images\capypara4.jpg" />
+    <Content Include="Content\images\capypara6.jpg" />
+    <Content Include="Content\images\vitdangiu.jpg" />
+    <Content Include="Content\images\vitiunuoc.jpg" />
+    <Content Include="Content\images\vitiuthuong.jpg" />
+    <Content Include="Content\images\voixanh.jpg" />
+    <Content Include="Content\images\whitecat.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -209,6 +234,9 @@
     <Content Include="Views\Home\Test.cshtml" />
     <Content Include="Views\Product\ProductDetail.cshtml" />
     <Content Include="Views\Product\ShoppingCart.cshtml" />
+    <Content Include="Views\Product\giaohangtannoi.cshtml" />
+    <Content Include="Views\Product\batdaumuasam.cshtml" />
+    <Content Include="Views\Product\bocquagiare.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
