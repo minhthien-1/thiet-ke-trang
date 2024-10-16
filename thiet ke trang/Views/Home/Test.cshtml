@@ -2,7 +2,7 @@
     Layout = "~/Views/Shared/MasterLayout.cshtml";
 }
 <style type="text/css">
-    #banner{
+    #banner {
         background-image: url("../Content/ha/hinhnen.jpg");
         background-size: cover;
         background-position: center;
@@ -13,82 +13,102 @@
         vertical-align: middle;
         color: cornsilk;
     }
-    .banner-content{
+    .slider-product-one-content-item-text li:hover {
+        color: red;
+    }
+    .banner-content {
         text-align: center;
         color: cornsilk;
     }
-    .banner-content h2{
-        font-size: 2.5rem;
-        color: darkblue;
-    }
-    .banner-content p{
-        font-size: 2rem;
-        color:black;
-    }
-    #featurProd{
+
+        .banner-content h2 {
+            font-size: 2.5rem;
+            color: darkblue;
+        }
+
+        .banner-content p {
+            font-size: 2rem;
+            color: black;
+        }
+
+    #featurProd {
         text-align: center;
     }
-    #featurProd h2{
-        font-size: 2rem;
-        margin-bottom: 10px;
-    }
-    .productContainer{
+
+        #featurProd h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+    .productContainer {
         display: flex;
         justify-content: center;
         gap: 30px;
     }
-    .Product-item{
+
+    .Product-item {
         width: 250px;
     }
-    .productDesc{
+
+    .productDesc {
         font: arial;
         font-size: 12px;
         color: gray;
     }
-    .Product-item h3{
+
+    .Product-item h3 {
         font-size: 16px;
         color: black;
         margin: 10px 0px;
     }
-    .productPrice{
+
+    .productPrice {
         font: arial;
         font-size: 12px;
         color: black;
         font-weight: bold;
     }
-    .Product-item img{
-       max-width: 200px;
+
+    .Product-item img {
+        max-width: 200px;
     }
-    .product-use img{
-        width:50px;
-        
+
+    .product-use img {
+        width: 50px;
     }
+
     .productContainer2 {
         display: flex;
         justify-content: center;
         gap: 40px;
     }
+
     .product-use h3 {
         font-size: 20px;
         color: black;
         margin: 10px 0px;
     }
-    .product-use{
-        width:200px;
+
+    .product-use {
+        width: 200px;
     }
+
     #tienich {
         text-align: center;
         align-items: center;
         justify-content: center;
     }
-    .ProductContainer3 img{
+
+    .ProductContainer3 img {
         max-width: 150px;
     }
+
     .ProductContainer3 {
         display: flex;
         justify-content: center;
         gap: 30px;
     }
+
     .anh2 {
         background-image: url('../../content/ha/nen-xanh-58bw2u0.jpg');
         background-size: cover;
@@ -100,14 +120,14 @@
         vertical-align: middle;
         color: cornsilk;
     }
-    .product-use h3 a{
+
+    .product-use h3 a {
         text-decoration: none;
     }
-    .h3 {
-        overflow: hidden;
-        width: 100%;
-        background-color: #000000;
+    h3:hover{
+        color:red;
     }
+
     .banner-content a {
         display: inLine-block;
         background-color: darkblue;
@@ -117,8 +137,64 @@
         font-size: 20px;
         padding: 10px;
     }
+
     section {
         font-family: sans-serif;
+        text-align: center;
+    }
+
+    .slider-product-one-content {
+        background-color: antiquewhite;
+        padding: 12px;
+    }
+
+    .slider-product-one-content-items {
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 16px;
+    }
+
+    .slider-product-one-content-item:hover img {
+        transform: translateY(-15px)
+    }
+
+    .slider-product-one-content-item {
+        width: 20%;
+        background-color: white;
+        padding: 30px 12px 12px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .slider-product-one-content-item img {
+        width: 100%;
+        transition: all 0.3s ease;
+    }
+
+    .slider-product-one-content-item-text li {
+        list-style-type: none;
+        margin-bottom: 6px;
+        font-size: 20px;
+        font-size: 15px;
+        transform: translateX(-18px);
+    }
+    .slider-product-one-content-item-text {
+        padding-top: 12px;
+    }
+
+    #de {
+        color: red;
+        font-size: 20px;
+        background-color: antiquewhite;
+    }
+
+    .slider-product-one-content-item-text li ins {
+        padding-right: 20px;
+    }
+
+    h1 {
+        color: crimson;
+        font-size: 30px;
     }
 </style>
 <section id="banner">
@@ -127,98 +203,93 @@
         <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
         @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Product")
     </div>
-    
+
 </section>
 <br />
-    <section id="tienich" class="content-section">
-        <div class="productContainer2">
-            <div class="product-use">
-                @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
-                <img src="~/Content/ha/ghtn2.PNG" /> <br />
-                <h3>@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Product")</h3>
+<section id="tienich" class="content-section">
+    <div class="productContainer2">
+        <div class="product-use">
+            @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
+            <img src="~/Content/ha/ghtn2.PNG" /> <br />
+            <h3>@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Product")</h3>
+        </div>
+        <div class="product-use">
+            @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
+            <img src="~/Content/ha/bocquagiare.PNG" />
+            <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Product")</h3>
+        </div>
+        <div class="product-use">
+            @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
+            <img src="~/Content/ha/tangthiepmienphi.PNG" />
+            <h3><a href="">Tặng thiệp miễn phí</a></h3>
+        </div>
+        <div class="product-use">
+            @*<img src="~/Content/ha/giat-gau-bog.png" />*@
+            <img src="~/Content/ha/giat.PNG" />
+            <h3><a href="">Giặt gấu bông</a></h3>
+        </div>
+        <div class="product-use">
+            @*<img src="~/Content/ha/nen-nho-gau.png" />*@
+            <img src="~/Content/ha/nennho.PNG" />
+            <h3><a href="">Nén nhỏ gấu</a></h3>
+        </div>
+    </div>
+    <div class="anh2">
+    </div>
+</section>
+<section class="slider-product-one">
+    <div class="container">
+        <div class="slider-product-one-content">
+            <div class="slider-product-one-content">
+                <h1>CÁC SẢN PHẨM NỔI BẬT</h1>
             </div>
-            <div class="product-use">
-                @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
-                <img src="~/Content/ha/bocquagiare.PNG" />
-                <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Product")</h3>
-            </div>
-            <div class="product-use">
-                @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
-                <img src="~/Content/ha/tangthiepmienphi.PNG" />
-                <h3><a href="">Tặng thiệp miễn phí</a></h3>
-            </div>
-            <div class="product-use">
-                @*<img src="~/Content/ha/giat-gau-bog.png" />*@
-                <img src="~/Content/ha/giat.PNG" />
-                <h3><a href="">Giặt gấu bông</a></h3>
-            </div>
-            <div class="product-use">
-                @*<img src="~/Content/ha/nen-nho-gau.png" />*@
-                <img src="~/Content/ha/nennho.PNG" />
-                <h3><a href="">Nén nhỏ gấu</a></h3>
+            <div class="slider-product-one-content-items">
+                <div class="slider-product-one-content-item">
+                    <img src="~/Content/images/016.jpg" />
+                    <div class="slider-product-one-content-item-text">
+                        <ul>
+                            <li>Vịt tóc xanh(em của Xuân tóc đỏ)</li>
+                            <li><small><del>165.000</del></small><ins>đ</ins> <span id="de">-46%</span></li>
+                            <li><b>89.000<ins>đ</ins></b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                    <img src="~/Content/images/vitdangiu.jpg" />
+                    <div class="slider-product-one-content-item-text">
+                        <ul>
+                            <li>Vịt đáng iu đeo túi hàng cao cấp</li>
+                            <li><small><del>95.000</del></small><ins>đ</ins> <span id="de"> -33%</span></li>
+                            <li><b>64.000<ins>đ</ins></b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                    <img src="~/Content/images/013.jpg" />
+                    <div class="slider-product-one-content-item-text">
+                        <ul>
+                            <li>Gấu bông Stitch ôm bé vịt siêu dễ thương</li>
+                            <li><small><del>180.000</del></small><ins>đ</ins> <span id="de"> -33%</span></li>
+                            <li><b>120.000<ins>đ</ins></b></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slider-product-one-content-item">
+                    <img src="~/Content/images/rabit.jpg" />
+                    <div class="slider-product-one-content-item-text">
+                        <ul>
+                            <li>Kuriozud siêu dễ thương</li>
+                            <li><small><del>266.000</del></small><ins>đ</ins> <span id="de"> -33%</span></li>
+                            <li><b>200.000<ins>đ</ins></b></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="anh2">
-        </div>
-    </section>
-    <section id="featurProd" class="content-section">
-        <h2>Sản phẩm nổi bật</h2>
-        <div class="productContainer">
-            <div class="Product-item">
-              <img src="~/Content/ha/gau_bong_cute_4d.jpg" />
-              <h3>Gấu bông màu nâu</h3>
-              <p class="productDesc">phổ biến</p>
-              <p class="productPrice">100.000</p>
-            </div>
-            <div class="Product-item">
-              <img src="~/Content/ha/gau4.jpg" />
-              <h3>Gấu teddy</h3>
-              <p class="productDesc">dễ thương</p>
-              <p class="productPrice">99.000</p>
-            </div>
-            <div class="Product-item">
-              <img src="~/Content/ha/gaubongnho.jpg"  />
-              <h3>Gấu bông nhỏ màu trắng</h3>
-              <p class="productDesc">xinh đẹp</p>
-              <p class="productPrice">150.000</p>
-            </div>
-        </div>
-        <div class="ProductContainer3">
-            <div class="Product-item2">
-                <img src="~/Content/ha/gauhong.jpg" />
-                <h3>gấu bông màu hồng</h3>
-                <p class="productDesc">ưa nhìn</p>
-                <p class="productPrice">100.000</p>
-            </div>
-            <div class="Product-item2">
-                <img src="~/Content/ha/Gau-truc-om-tre-2.jpg" />
-                <h3>gấu trúc </h3>
-                <p class="productDesc">mềm mại</p>
-                <p class="productPrice">150.000</p>
-            </div>
-            <div class="Product-item2">
-                <img src="~/Content/ha/capypara0.jpg" />
-                <h3>gấu bông capypara</h3>
-                <p class="productDesc">theo chủ đề</p>
-                <p class="productPrice">120.000</p>
-            </div>
-            <div class="Product-item2">
-                <img src="~/Content/ha/gau-bong-stitch-xanh.jpg" />
-                <h3>gấu bông disney</h3>
-                <p class="productDesc">trẻ con</p>
-                <p class="productPrice">130.000</p>
-            </div>
-            <div class="Product-item2">
-                <img src="~/Content/ha/pikachu.jpg" />
-                <h3>gấu bông pokemon</h3>
-                <p class="productDesc">xinh xắn</p>
-                <p class="productPrice">140.000</p>
-            </div>
-
-        </div>
-    </section>
-    <section id="productList">
-    </section>
+    </div>
+</section>
+<section id="productList">
+</section>
 
 
 
