@@ -134,6 +134,7 @@
 
     .product-use h3 a {
         text-decoration: none;
+        color: #FF6683;
     }
     h3:hover{
         color:red;
@@ -223,7 +224,7 @@
     <div class="banner-content">
         <h2>Chào mừng bạn đến với web bán gấu bông của chúng tôi</h2>
         <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
-        <h4> @Html.ActionLink("Bắt đầu mua sắm","batdaumuasam","Prodcuct")</h4>
+        @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")
     </div>
 
 </section>
@@ -235,27 +236,27 @@
         <div class="product-use">
             @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
             <img src="~/Content/ha/ghtn2.PNG" /> <br />
-            <h3 style="color:black">@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Product")</h3>
+            <h3>@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
             <img src="~/Content/ha/bocquagiare.PNG" />
-            <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Product")</h3>
+            <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
             <img src="~/Content/ha/tangthiepmienphi.PNG" />
-            <h3><a href="">Tặng thiệp miễn phí</a></h3>
+            <h3>@Html.ActionLink("Tặng thiệp miễn phí", "tangthiepmienphi", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/giat-gau-bog.png" />*@
             <img src="~/Content/ha/giat.PNG" />
-            <h3><a href="">Giặt gấu bông</a></h3>
+            <h3>@Html.ActionLink("Giặt gấu bông", "giatgaubong", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/nen-nho-gau.png" />*@
             <img src="~/Content/ha/nennho.PNG" />
-            <h3><a href="">Nén nhỏ gấu</a></h3>
+            <h3>@Html.ActionLink("Nén nhỏ gấu", "nennhogau", "Products")</h3>
         </div>
     </div>
     <div class="anh2">
