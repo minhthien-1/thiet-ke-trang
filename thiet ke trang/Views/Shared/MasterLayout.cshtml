@@ -24,7 +24,7 @@
 
     section {
         background-color: white;
-        min-height: 300px;
+       /* min-height: 300px;*/
     }
     footer {
         background-color: lightpink;
@@ -177,19 +177,19 @@
         display:none;
         overflow:hidden;
     }
-    .header_search_history_heading{
+    /*.header_search_history_heading{
         margin:6px 12px; 
         font-size:1.4rem;
         color:lightgray;
         text-decoration:none;
         list-style:none;
-    }
-    .header_search_history_list{
+    }*/
+    /*.header_search_history_list{
         padding-left:0;
         list-style:none;
         margin-bottom:0;
         margin:6px 0 0;
-    }
+    }*/
     .header_search_history_item{
         height:38px;
         padding:0 12px;
@@ -405,30 +405,30 @@
                         <div class="header_search_input_ls">
                           <input type="text" class="header_search_input" placeholder="Nhập sản phẩm cần tìm: " />
                             <div class="header_search_history">
-                            <h3 class="header_search_history_heading">Lịch sử tìm kiếm</h3>
-                            <ul class="header_search_history_list">
-                                <li class="header_search_history_item">
+                            @*<h3 class="header_search_history_heading">Lịch sử tìm kiếm</h3>
+                            <ul class="header_search_history_list">*@
+                                @*<li class="header_search_history_item">
                                     <a href="">Gấu hồng</a>
                                 </li>
                                 <li class="header_search_history_item">
                                     <a href="">Gấu nâu</a>
                                 </li>
-                            </ul>
+                            </ul>*@
                             </div>
                         </div>
                         <div class="header_search_select">
                             <span class="header_search_select_label">Trong shop</span>
                             <i class="header_search_select_icon fa-solid fa-chevron-down"></i>
-                            <ul class="header_search_select_option">
+                            <!--<ul class="header_search_select_option">
                                 <li class="header_search_select_option_item header_search_select_option_item--active">
                                     <span>Trong shop</span>
                                     <i class="fa-solid fa-check"></i>
                                 </li>
                                 <li class="header_search_select_option_item">
-                                    <span>Ngoài shop</span>
+                                    <span>Ngoài shop</span>-->
                                     @*<i class="fa-solid fa-check"></i>*@
-                                </li>
-                            </ul>
+                                <!--</li>
+                            </ul>-->
                         </div>
                         <button class="header_search_btn"><i class="header_search_btn_icon fa-solid fa-magnifying-glass"></i></button>
                     </div>
@@ -576,6 +576,7 @@
                                             sử mua
                                             hàng
                                         </a>
+                                       
                                     </li>
                                 </ul>
 
