@@ -128,6 +128,29 @@ namespace thiet_ke_trang.Controllers
             }
             base.Dispose(disposing);
         }
-        
+        public ActionResult dksd()
+        {
+            return View();
+        }
+        public ActionResult csbmttcn()
+        {
+            return View();
+        }
+        public ActionResult bmtt()
+        {
+            return View();
+        }
+        public ActionResult gtch()
+        {
+            return View();
+        }
+        public ActionResult htch()
+        {
+            return View();
+        }
+        public ActionResult csdtht()
+        {
+            return View();
+        }
     }
 }
