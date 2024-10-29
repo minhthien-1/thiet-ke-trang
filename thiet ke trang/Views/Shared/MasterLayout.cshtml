@@ -512,23 +512,20 @@
                             <div class="footer-static-content">
                                 <ul class="footer-list" style="align-content: space-between; font-family: Arial;">
                                     <li>
-                                        <a href=""> Điều khoản sử dụng</a>
+                                        @Html.ActionLink("Điều khoản sử dụng","dksd", "Customers")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Chính sách bảo mật thông tin cá nhân", "csbmttcn", "Customers")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Bảo mật thanh toán","bmtt","Customers")
+                                    </li>
+                                    <li>
+                                        @Html.ActionLink("Giới thiệu cửa hàng", "gtch", "Customers")
                                     </li>
 
                                     <li>
-                                        <a href="">Bảo mật thông tin cá nhân</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Bảo mật thanh toán</a>
-                                    </li>
-
-                                    <li>
-                                        <a href="">Giới thiệu cửa hàng</a>
-                                    </li>
-
-                                    <li>
-                                        <a href=""> Hệ thống cửa hàng </a>
+                                        @Html.ActionLink("Hệ thống cửa hàng", "htch", "Customers")
                                     </li>
 
                                 </ul>
@@ -540,7 +537,7 @@
                             </div>
                             <div class="footer-static-content ">
                                 <ul class="footer-list">
-                                    <li><a href="">Đổi - hoàn tiền</a></li>
+                                    <li>@Html.ActionLink("Chính sách đổi trả hoàn tiền", "csdtht", "Customers")</li>
                                     <li><a href="">Bảo hành - bồi hoàn</a></li>
                                     <li><a href="">Vận chuyển</a></li>
                                     <li><a href="">Khách thân thiết</a></li>
