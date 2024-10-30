@@ -1,0 +1,197 @@
+﻿
+@{
+    ViewBag.Title = "ChangeAddress";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+
+
+<html lang="en">
+<head>
+
+    <script>
+        document.getElementById('address-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            // Lấy dữ liệu từ form
+            const formData = {
+                FirstName: document.getElementById('FirstName').value,
+                LastName: document.getElementById('LastName').value,
+                phone: document.getElementById('phone').value,
+                address: document.getElementById('address').value,
+                city: document.getElementById('city').value,
+                district: document.getElementById('district').value
+            };
+
+            // Gửi dữ liệu đến backend
+            fetch('/api/addresses', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(formData)
+            })
+                .then(response => response.json())
+                .then(data => {
+                    alert('Địa chỉ đã được lưu thành công!');
+                    console.log(data);
+                })
+                .catch(error => {
+                    console.error('Lỗi:', error);
+                    alert('Đã xảy ra lỗi khi lưu địa chỉ.');
+                });
+        });
+    </script>
+
+
+    <style>
+
+       
+
+        section {
+            padding: 8px 10%;
+            
+            margin: 0 auto;
+        }
+
+        .ChangeAddress_Form {
+            
+            width: 100%;
+            max-width: 400px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+            button:hover {
+                background-color: #218838;
+            }
+    </style>
+
+
+</head>
+
+
+<body style="background-color:antiquewhite">
+    <div class="ChangeAddress_Form" style="margin:10% 33.5%; background-color:pink">
+        <h2 style="text-align:center">Thêm Địa Chỉ Mới</h2>
+        <form id="address-form">
+
+            <label for="name">Họ: <em>*</em></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Tên: <em>*</em></label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Số Điện Thoại: <em>*</em></label>
+            <input type="text" id="phone" name="phone" required>
+
+
+
+            <label for="city">
+                Tỉnh/Thành phố: <em>*</em>
+                <div class="edit-input-container">
+                    <select id="region_id" name="region_id" title="Tỉnh/Thành phố" class="validate-select required-entry" style="width: 254px; padding: 7px 5px; width: 100% !important; height: 36px; border: 1px solid #ddd; font-size: 14px; border: 1px solid #929191; color: #646464; " defaultvalue="0">
+                        <option value="">Vui lòng chọn</option>
+                        <option value="1" title="Hồ Chí Minh">Hồ Chí Minh</option>
+                        <option value="2" title="Hải Phòng">Hải Phòng</option>
+                        <option value="3" title="Hà Nội">Hà Nội</option>
+                        <option value="4" title="Đà Nẵng">Đà Nẵng</option>
+                        <option value="5" title="Hưng Yên">Hưng Yên</option>
+                        <option value="6" title="Hải Dương">Hải Dương</option>
+                        <option value="7" title="Quảng Ninh">Quảng Ninh</option>
+                        <option value="8" title="Bắc Ninh">Bắc Ninh</option>
+                        <option value="9" title="Bắc Giang">Bắc Giang</option>
+                        <option value="10" title="Lạng Sơn">Lạng Sơn</option>
+                        <option value="11" title="Thái Nguyên">Thái Nguyên</option>
+                        <option value="12" title="Bắc Kạn">Bắc Kạn</option>
+                        <option value="13" title="Cao Bằng">Cao Bằng</option>
+                        <option value="14" title="Vĩnh Phúc">Vĩnh Phúc</option>
+                        <option value="15" title="Phú Thọ">Phú Thọ</option>
+                        <option value="16" title="Tuyên Quang">Tuyên Quang</option>
+                        <option value="501" title="Hà Giang">Hà Giang</option>
+                        <option value="502" title=" Yên Bái"> Yên Bái</option>
+                        <option value="503" title="Lào Cai">Lào Cai</option>
+                        <option value="504" title="Hòa Bình">Hòa Bình</option>
+                        <option value="505" title="Sơn La">Sơn La</option>
+                        <option value="506" title="Điện Biên">Điện Biên</option>
+                        <option value="507" title="Lai Châu">Lai Châu</option>
+                        <option value="508" title="Hà Nam">Hà Nam</option>
+                        <option value="509" title="Thái Bình">Thái Bình</option>
+                        <option value="510" title="Nam Định">Nam Định</option>
+                        <option value="511" title="Ninh Bình">Ninh Bình</option>
+                        <option value="512" title="Thanh Hóa">Thanh Hóa</option>
+                        <option value="513" title="Nghệ An">Nghệ An</option>
+                        <option value="514" title="Hà Tĩnh">Hà Tĩnh</option>
+                        <option value="515" title="Quảng Bình">Quảng Bình</option>
+                        <option value="516" title="Quảng Trị">Quảng Trị</option>
+                        <option value="517" title="Thừa Thiên - Huế">Thừa Thiên - Huế</option>
+                        <option value="518" title="Quảng Nam">Quảng Nam</option>
+                        <option value="519" title="Quảng Ngãi">Quảng Ngãi</option>
+                        <option value="520" title="Kon Tum">Kon Tum</option>
+                        <option value="521" title="Bình Định">Bình Định</option>
+                        <option value="522" title="Gia Lai">Gia Lai</option>
+                        <option value="523" title="Phú Yên">Phú Yên</option>
+                        <option value="524" title="Đắk Lắk">Đắk Lắk</option>
+                        <option value="525" title="Đăk Nông">Đăk Nông</option>
+                        <option value="526" title="Khánh Hòa">Khánh Hòa</option>
+                        <option value="527" title="Ninh Thuận">Ninh Thuận</option>
+                        <option value="528" title="Lâm Đồng">Lâm Đồng</option>
+                        <option value="529" title="Bà Rịa - Vũng Tàu">Bà Rịa - Vũng Tàu</option>
+                        <option value="530" title="Bình Thuận">Bình Thuận</option>
+                        <option value="531" title="Đồng Nai">Đồng Nai</option>
+                        <option value="532" title="Bình Dương">Bình Dương</option>
+                        <option value="533" title="Bình Phước">Bình Phước</option>
+                        <option value="534" title="Tây Ninh">Tây Ninh</option>
+                        <option value="535" title="Long An">Long An</option>
+                        <option value="536" title="Tiền Giang">Tiền Giang</option>
+                        <option value="537" title="Đồng Tháp">Đồng Tháp</option>
+                        <option value="538" title="An Giang">An Giang</option>
+                        <option value="539" title="Vĩnh Long">Vĩnh Long</option>
+                        <option value="540" title="Cần Thơ">Cần Thơ</option>
+                        <option value="541" title="Hậu Giang">Hậu Giang</option>
+                        <option value="542" title="Kiên Giang">Kiên Giang</option>
+                        <option value="543" title="Bến Tre">Bến Tre</option>
+                        <option value="544" title="Trà Vinh">Trà Vinh</option>
+                        <option value="545" title="Sóc Trăng">Sóc Trăng</option>
+                        <option value="546" title="Bạc Liêu">Bạc Liêu</option>
+                        <option value="547" title="Cà Mau">Cà Mau</option>
+                    </select>
+                </div>
+            </label>
+
+            <label for="address">Địa Chỉ: <em>*</em></label>
+            <input type="text" id="address" name="address" required>
+
+
+            <div>
+                <p class="required">(*): bắt buộc</p>
+                <button type="submit" style="margin-top: 15px;">Lưu Địa Chỉ</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

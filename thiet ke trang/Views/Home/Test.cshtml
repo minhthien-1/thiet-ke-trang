@@ -3,16 +3,16 @@
 }
 <style type="text/css">
     #banner {
-        background-image: url('../../content/images/anh-nen-gau-brown-cho-may-tinh_090108851.jpg');
-        background-size: cover;
+        background-image: url('../../content/images/hinhnenmoi.jpg');
         background-position: center;
-        height: 95%;
+        height: 85%;
         display: flex;
         align-items: center;
         justify-content: center;
         vertical-align: top;
         color: cornsilk;
         position: relative;
+        margin:0 50px;
     }
     .btn{
 
@@ -30,7 +30,8 @@
             color: deeppink;
             position: absolute; 
             top: -10px;
-            right:180px;
+            right:90px;
+            left:90px;
         }
 
         .banner-content p {
@@ -38,7 +39,8 @@
             color: hotpink;
             position: absolute;
             top: 40px;
-            right: 420px;
+            right: 210px;
+            left:210px;
         }
        
     
@@ -124,7 +126,8 @@
         background-image: url('../../content/images/nenhong.jpg');
         background-size: cover;
         background-position: center;
-        height: 200px;
+        height: 100px;
+        
         display: flex;
         align-items: center;
         justify-content: center;
@@ -134,6 +137,7 @@
 
     .product-use h3 a {
         text-decoration: none;
+        color: #FF6683;
     }
     h3:hover{
         color:red;
@@ -223,9 +227,8 @@
     <div class="banner-content">
         <h2>Chào mừng bạn đến với web bán gấu bông của chúng tôi</h2>
         <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
-        <h4> @Html.ActionLink("Bắt đầu mua sắm","batdaumuasam","Prodcuct")</h4>
+        @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")
     </div>
-
 </section>
 <br />
 <section id="tienich" class="content-section">
@@ -235,27 +238,27 @@
         <div class="product-use">
             @*<img src="~/Content/ha/giao-hang-tan-nha.png" width="50"/>*@
             <img src="~/Content/ha/ghtn2.PNG" /> <br />
-            <h3 style="color:black">@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Product")</h3>
+            <h3>@Html.ActionLink("Giao hàng tận nơi", "giaohangtannoi", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/boc-qua-gia-re.png" />*@
             <img src="~/Content/ha/bocquagiare.PNG" />
-            <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Product")</h3>
+            <h3>@Html.ActionLink("Bốc quà giá rẻ", "bocquagiare", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/tang-thiep-mien-phi.png" />*@
             <img src="~/Content/ha/tangthiepmienphi.PNG" />
-            <h3><a href="">Tặng thiệp miễn phí</a></h3>
+            <h3>@Html.ActionLink("Tặng thiệp miễn phí", "tangthiepmienphi", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/giat-gau-bog.png" />*@
             <img src="~/Content/ha/giat.PNG" />
-            <h3><a href="">Giặt gấu bông</a></h3>
+            <h3>@Html.ActionLink("Giặt gấu bông", "giatgaubong", "Products")</h3>
         </div>
         <div class="product-use">
             @*<img src="~/Content/ha/nen-nho-gau.png" />*@
             <img src="~/Content/ha/nennho.PNG" />
-            <h3><a href="">Nén nhỏ gấu</a></h3>
+            <h3>@Html.ActionLink("Nén nhỏ gấu", "nennhogau", "Products")</h3>
         </div>
     </div>
     <div class="anh2">
@@ -310,10 +313,174 @@
                 </div>
             </div>
         </div>
+        <div class="slider-product-one-content">
+            <h1>GẤU BÔNG TỐT NGHIỆP</h1>
+        </div>
+        @*Phần của Việt*@
+        <div class="slider-product-one-content-items">
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-tot-nghiep-1.png" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Hộp quà gấu bông tốt nghiệp đáng yêu</li>
+                        <li><small><del>300.000</del></small><ins>đ</ins> <span id="de">-17%</span></li>
+                        <li><b>250.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-tot-nghiep-2.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Gấu bông tốt nghiệp lông xù cực xinh</li>
+                        <li><small><del>195.000</del></small><ins>đ</ins> <span id="de"> -16%</span></li>
+                        <li><b>164.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-tot-nghiep-3.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Gấu bông tốt nghiệp gói sẵn</li>
+                        <li><small><del>280.000</del></small><ins>đ</ins> <span id="de"> -29%</span></li>
+                        <li><b>200.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-tot-nghiep-4.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Gấu tốt nghiệp lông trơn </li>
+                        <li><small><del>195.000</del></small><ins>đ</ins> <span id="de"> -33%</span></li>
+                        <li><b>164.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="slider-product-one-content">
+        <div class="slider-product-one-content">
+            <h1>GẤU BÔNG SINH NHẬT</h1>
+
+        </div>
+        <div class="slider-product-one-content-items">
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-sinh-nhat-1.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Cáo nhỏ đáng yêu</li>
+                        <li><small><del>80.000</del></small><ins>đ</ins> <span id="de">-20%</span></li>
+                        <li><b>64.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-sinh-nhat-2.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Combo quà tặng gấu teddy</li>
+                        <li><small><del>150.000</del></small><ins>đ</ins> <span id="de"> -20%</span></li>
+                        <li><b>120.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-sinh-nhat-3.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Teddy mũ đỏ siêu xinh</li>
+                        <li><small><del>120.000</del></small><ins>đ</ins> <span id="de"> -17%</span></li>
+                        <li><b>100.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="slider-product-one-content-item">
+                <img src="~/Content/images/gau-bong-sinh-nhat-4.jpg" />
+                <div class="slider-product-one-content-item-text">
+                    <ul>
+                        <li>Teddy mũ nâu  đáng yêu</li>
+                        <li><small><del>135.000</del></small><ins>đ</ins> <span id="de"> -11%</span></li>
+                        <li><b>120.000<ins>đ</ins></b></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--<div class="slider-product-one-content">
+             <div class="slider-product-one-content">
+                 <h1>GỐI BÔNG & PHỤ KIỆN</h1>
+             </div>
+    @*Phần của Bảo*@
+    </div>-->
+
+<div class="slider-product-one-content">
+    <div class="slider-product-one-content">
+        <h1>GỐI BÔNG & PHỤ KIỆN</h1>
+    </div>
+</div>
+    @*Phần của Bảo*@
+<div class="slider-product-one-content-items">
+    <div class="slider-product-one-content-item">
+        <img src="~/Content/images/goi-om-hai-cau-2.jpg" />
+        <div class="slider-product-one-content-item-text">
+            <ul>
+                <li>Gối Ôm Hải Cẩu</li>
+                <li><small><del>395.000</del></small><ins>đ</ins> <span id="de"> -20%</span></li>
+                <li><b>316.000<ins>đ</ins></b></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="slider-product-one-content-item">
+        <img src="~/Content/images/bo-tam-giweb6.jpg" />
+        <div class="slider-product-one-content-item-text">
+            <ul>
+                <li>Đệm Ngồi Hình Quả Bơ</li>
+                <li><small><del>365.000</del></small><ins>đ</ins> <span id="de"> -20%</span></li>
+                <li><b>292.000<ins>đ</ins></b></li>
+            </ul>
+        </div>
+    </div>
+    <div class="slider-product-one-content-item">
+        <img src="~/Content/images/ghe-ngoi-hinh-thu-2.jpg" />
+        <div class="slider-product-one-content-item-text">
+            <ul>
+                <li>Ghế Bông Hình Thú</li>
+                <li><small><del>425.000</del></small><ins>đ</ins> <span id="de"> -25%</span></li>
+                <li><b>318.750<ins>đ</ins></b></li>
+            </ul>
+        </div>
+    </div> 
+        
+    <div class="slider-product-one-content-item">
+        <img src="~/Content/images/Goi-co-bien-hinh-15.jpg" />
+        <div class="slider-product-one-content-item-text">
+            <ul>
+                <li>Gối Cổ Biến Hình</li>
+
+                <li><b>175.000<ins>đ</ins></b></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+    <div class="slider-product-one-content">
+        <div class="slider-product-one-content">
+            <h1>MÓC KHÓA THÚ BÔNG</h1>
+        </div>
+        @*Phần của Thiện*@
+
     </div>
 </section>
-<section id="productList">
-</section>
+        <section id="productList">
+        </section>
 
 
 
