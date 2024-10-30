@@ -160,12 +160,16 @@
         color:white;
         font-size:2.2rem;
     }
+        .header_giohang_icon:hover {
+            cursor: pointer;
+            color: antiquewhite;
+        }
     .header_search_input_ls{
         flex:1;
         height:100%;
         position:relative;
     }
-    .header_search_history{
+    /*.header_search_history{
         position:absolute;
         top:100%;
         left:0;
@@ -175,7 +179,7 @@
         box-shadow:0 1px 5px #ffffff;
         display:none;
         overflow:hidden;
-    }
+    }*/
     /*.header_search_history_heading{
         margin:6px 12px; 
         font-size:1.4rem;
@@ -189,12 +193,12 @@
         margin-bottom:0;
         margin:6px 0 0;
     }*/
-    .header_search_history_item{
+    /*.header_search_history_item{
         height:38px;
         padding:0 12px;
-    }
+    }*/
     
-    .header_search_input:focus ~ .header_search_history{
+    /*.header_search_input:focus ~ .header_search_history{
         display: block;
     }
     .header_search_history_item:hover{
@@ -205,7 +209,7 @@
         text-decoration:none;
         font-size:1.4rem;
         color:#00000073;
-    }
+    }*/
     .header_search_input{
         width:100%;
         height:100%;
@@ -390,52 +394,29 @@
                     </ul>
                 </nav>
 
-                <div class="header_with_search">
                     @*<div class="header_logo">
 
                         <img class="header_logo" src="~/Content/images/logo.png" width="7%" />
 
                     </div>*@
-                    <div class="cuahang">
-                        <a href="~/Home/Test" class="cuahang">GAUBONG.COM</a>
-                    </div>
+                    <div class="header_with_search">
 
-                    <div class="header_search">
-                        <div class="header_search_input_ls">
-                          <input type="text" class="header_search_input" placeholder="Nhập sản phẩm cần tìm: " />
-                            <div class="header_search_history">
-                            @*<h3 class="header_search_history_heading">Lịch sử tìm kiếm</h3>
-                            <ul class="header_search_history_list">*@
-                                @*<li class="header_search_history_item">
-                                    <a href="">Gấu hồng</a>
-                                </li>
-                                <li class="header_search_history_item">
-                                    <a href="">Gấu nâu</a>
-                                </li>
-                            </ul>*@
+                        <div class="cuahang">
+                            <a href="~/Home/Test" class="cuahang">GAUBONG.COM</a>
+                        </div>
+
+                        <div class="header_search">
+                            <div class="header_search_input_ls">
+                                <input type="text" class="header_search_input" placeholder="Nhập sản phẩm cần tìm: " />
+
                             </div>
-                        </div>
-                        <div class="header_search_select">
-                            <span class="header_search_select_label">Trong shop</span>
-                            <i class="header_search_select_icon fa-solid fa-chevron-down"></i>
-                            <!--<ul class="header_search_select_option">
-                                <li class="header_search_select_option_item header_search_select_option_item--active">
-                                    <span>Trong shop</span>
-                                    <i class="fa-solid fa-check"></i>
-                                </li>
-                                <li class="header_search_select_option_item">
-                                    <span>Ngoài shop</span>-->
-                                    @*<i class="fa-solid fa-check"></i>*@
-                                <!--</li>
-                            </ul>-->
-                        </div>
-                        <button class="header_search_btn"><i class="header_search_btn_icon fa-solid fa-magnifying-glass"></i></button>
-                    </div>
-                    <div class="header_giohang">
-                        <i class="header_giohang_icon fa-solid fa-cart-shopping" ></i>
-                    </div>
+                            <button class="header_search_btn"><i class="header_search_btn_icon fa-solid fa-magnifying-glass"></i></button>
 
-                </div>
+                        </div>
+                        <div class="header_giohang">
+                            <i class="header_giohang_icon fa-solid fa-cart-shopping"></i>
+                        </div>
+                    </div>
             </div>
         </header>
         <section>
@@ -566,7 +547,7 @@
                                     <li>
                                         @Html.ActionLink("Thay đổi địa chỉ ", "ChangeAddress", "Customers")
                                     </li>
-                                    </li>
+                                    
                                     <li>
                                         <a href="">
                                             Chi tiết tài
