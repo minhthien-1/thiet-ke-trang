@@ -267,6 +267,14 @@
     <Content Include="Content\images\capypara3.jpg" />
     <Content Include="Content\images\capypara4.jpg" />
     <Content Include="Content\images\capypara6.jpg" />
+    <Content Include="Content\images\gau-bong-sinh-nhat-1.jpg" />
+    <Content Include="Content\images\gau-bong-sinh-nhat-2.jpg" />
+    <Content Include="Content\images\gau-bong-sinh-nhat-3.jpg" />
+    <Content Include="Content\images\gau-bong-sinh-nhat-4.jpg" />
+    <Content Include="Content\images\gau-bong-tot-nghiep-1.png" />
+    <Content Include="Content\images\gau-bong-tot-nghiep-2.jpg" />
+    <Content Include="Content\images\gau-bong-tot-nghiep-3.jpg" />
+    <Content Include="Content\images\gau-bong-tot-nghiep-4.jpg" />
     <Content Include="Content\images\ghe-ngoi-hinh-thu-2.jpg" />
     <Content Include="Content\images\giat-gau-bong-1.jpg" />
     <Content Include="Content\images\giat-gau-bong-2.png" />
