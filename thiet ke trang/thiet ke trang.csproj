@@ -376,6 +376,16 @@
     <Content Include="Views\Users\Details.cshtml" />
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Users\Index.cshtml" />
+    <Content Include="Views\Customers\dksd.cshtml" />
+    <Content Include="Views\Customers\csbmttcn.cshtml" />
+    <Content Include="Views\Customers\bmtt.cshtml" />
+    <Content Include="Views\Customers\gtch.cshtml" />
+    <Content Include="Views\Customers\htch.cshtml" />
+    <Content Include="Views\Customers\csdtht.cshtml" />
+    <Content Include="Views\Customers\BaoHanh.cshtml" />
+    <Content Include="Views\Customers\ChangeAddress.cshtml" />
+    <Content Include="Views\Customers\KhachThanThiet.cshtml" />
+    <Content Include="Views\Customers\ShippingPolicy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
