@@ -152,5 +152,29 @@ namespace thiet_ke_trang.Controllers
         {
             return View();
         }
+
+        public ActionResult ShippingPolicy()
+        {
+
+            return View();
+        }
+
+        public ActionResult BaoHanh()
+        {
+
+            return View();
+        }
+
+        public ActionResult KhachThanThiet()
+        {
+
+            return View();
+        }
+
+        public ActionResult ChangeAddress()
+        {
+
+            return View();
+        }
     }
 }
