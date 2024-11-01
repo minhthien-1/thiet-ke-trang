@@ -222,12 +222,19 @@
         top:90px;
         right:575px;
     }
+    .banner-content h3{
+        cursor: pointer;
+        
+    }
+    .banner-content_bdms:hover{
+        background-color:lightpink
+    }
 </style>
 <section id="banner">
     <div class="banner-content">
         <h2>Chào mừng bạn đến với web bán gấu bông của chúng tôi</h2>
         <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
-        @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")
+        <h3 class="banner-content_bdms">@Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")</h3>
     </div>
 </section>
 <br />
@@ -411,12 +418,6 @@
     </div>
 
 
-    <!--<div class="slider-product-one-content">
-             <div class="slider-product-one-content">
-                 <h1>GỐI BÔNG & PHỤ KIỆN</h1>
-             </div>
-    @*Phần của Bảo*@
-    </div>-->
 
 <div class="slider-product-one-content">
     <div class="slider-product-one-content">
@@ -471,13 +472,54 @@
 
 
 
+<div class="slider-product-one-content">
     <div class="slider-product-one-content">
-        <div class="slider-product-one-content">
-            <h1>MÓC KHÓA THÚ BÔNG</h1>
-        </div>
-        @*Phần của Thiện*@
-
+        <h1>MÓC KHÓA THÚ BÔNG</h1>
     </div>
+    @*Phần của Thiện*@
+    <div class="slider-product-one-content-items">
+        <div class="slider-product-one-content-item">
+            <img src="~/Content/images/moc khoa bong cao (3).jpg" />
+            <div class="slider-product-one-content-item-text">
+                <ul>
+                    <li>Móc khóa gấu bông cáo cute</li>
+                    <li><small><del>95.000</del></small><ins>đ</ins> <span id="de">-46%</span></li>
+                    <li><b>43.700<ins>đ</ins></b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-product-one-content-item">
+            <img src="~/Content/images/mkgm4.jpg" />
+            <div class="slider-product-one-content-item-text">
+                <ul>
+                    <li>Móc khóa gấu mèo bông hottrend</li>
+                    <li><small><del>109.000</del></small><ins>đ</ins> <span id="de"> -36%</span></li>
+                    <li><b>39.240<ins>đ</ins></b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-product-one-content-item">
+            <img src="~/Content/images/mockhoa3.jpg" />
+            <div class="slider-product-one-content-item-text">
+                <ul>
+                    <li>Móc khóa mèo lười xinh xắn</li>
+                    <li><small><del>90.000</del></small><ins>đ</ins> <span id="de"> -32%</span></li>
+                    <li><b>61.200<ins>đ</ins></b></li>
+                </ul>
+            </div>
+        </div>
+        <div class="slider-product-one-content-item">
+            <img src="~/Content/images/mockhoa4.jpg" />
+            <div class="slider-product-one-content-item-text">
+                <ul>
+                    <li>Móc khóa gấu bông trang trí hộp quà</li>
+                    <li><small><del>70.000</del></small><ins>đ</ins> <span id="de"> -33%</span></li>
+                    <li><b>46.900<ins>đ</ins></b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 </section>
         <section id="productList">
         </section>

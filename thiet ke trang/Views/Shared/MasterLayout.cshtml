@@ -160,12 +160,18 @@
         color:white;
         font-size:2.2rem;
     }
-    
+
+        .header_giohang_icon:hover {
+            cursor: pointer;
+            color: antiquewhite;
+        }
+
     .header_search_input_ls{
         flex:1;
         height:100%;
         position:relative;
     }
+
    /* .header_search_history{
         position:absolute;
         top:100%;
@@ -176,8 +182,21 @@
         box-shadow:0 1px 5px #ffffff;
         display:none;
         overflow:hidden;
+
     }*/
-    
+    /*.header_search_history_heading{
+        margin:6px 12px; 
+        font-size:1.4rem;
+        color:lightgray;
+        text-decoration:none;
+        list-style:none;
+    }*/
+    /*.header_search_history_list{
+        padding-left:0;
+        list-style:none;
+        margin-bottom:0;
+        margin:6px 0 0;
+    }*/
     /*.header_search_history_item{
         height:38px;
         padding:0 12px;
@@ -366,8 +385,6 @@
                     <div class="header_giohang">
                         <i class="header_giohang_icon fa-solid fa-cart-shopping" ></i>
                     </div>
-
-                </div>
             </div>
         </header>
         <section>
@@ -498,7 +515,7 @@
                                     <li>
                                         @Html.ActionLink("Thay đổi địa chỉ ", "ChangeAddress", "Customers")
                                     </li>
-                                    </li>
+                                    
                                     <li>
                                         <a href="">
                                             Chi tiết tài
