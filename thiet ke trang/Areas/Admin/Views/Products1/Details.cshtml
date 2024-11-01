@@ -1,0 +1,15 @@
+﻿@model thiet_ke_trang.Models.Product
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2 class="btn btn-info">CHI TIẾT SẢN PHẨM</h2>
+@Html.Partial("PVCDetailProductIndex",Model)
+<div class="form-group">
+    <div style="float:right" class="col-md-offset-3 col-md-9">
+            @Html.ActionLink("Cập nhật", "Edit", new { id = Model.ProductID }, new { @class = "btn btn-primary btn-sm" }) |
+            @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>
