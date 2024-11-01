@@ -11,6 +11,7 @@ namespace thiet_ke_trang.Areas.Admin.Controllers
         // GET: Admin/Home
         public ActionResult Index()
         {
+            //.
             return View();
         }
     }
