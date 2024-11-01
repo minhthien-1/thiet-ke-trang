@@ -1,0 +1,27 @@
+﻿@model thiet_ke_trang.Models.Category
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2 class="bg-info">THÔNG TIN CHI TIẾT DANH MỤC</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal for">
+        <dt>
+            @*@Html.DisplayNameFor(model => model.CategoryName)*@
+            Tên Danh Mục
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Cập nhật", "Edit", new { id = Model.CategoryID }, new { @class = "btn btn-primary btn-sm" }) |
+    @Html.ActionLink("Quay lại danh sách", "Index",null, new { @class = "btn btn-primary btn-sm" })
+</p>

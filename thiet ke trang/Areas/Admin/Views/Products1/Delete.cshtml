@@ -1,0 +1,20 @@
+﻿@model thiet_ke_trang.Models.Product
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+<head>
+    <style>
+        
+    </style>
+</head>
+<h2 class="btn btn-info">XÓA SẢN PHẨM</h2>
+<h3 class="bg-warning">Bạn chắc chắn muốn xóa sản phẩm này à?</h3>
+@Html.Partial("PVCDetailProductIndex", Model)
+<div class="form-group">
+    <div style="float:right"class="col-md-offset-3 col-md-9">
+    @Html.ActionLink("Xóa", "Delete", new { id = Model.ProductID }, new { @class = "btn btn-primary btn-sm" }) |
+    @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-primary btn-sm" })
+    </div>
+</div>

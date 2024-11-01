@@ -53,6 +53,12 @@
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PagedList, Version=1.17.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.1.17.0.0\lib\net40\PagedList.dll</HintPath>
+    </Reference>
+    <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -130,7 +136,9 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\CategoriesController.cs" />
     <Compile Include="Areas\Admin\Controllers\Home1Controller.cs" />
+    <Compile Include="Areas\Admin\Controllers\Products1Controller.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
@@ -174,6 +182,8 @@
     <Compile Include="Models\User.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ViewModel\HomeProductVM.cs" />
+    <Compile Include="Models\ViewModel\ProductSearchVM.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -302,6 +312,8 @@
     <Content Include="Content\images\vitiuthuong.jpg" />
     <Content Include="Content\images\voixanh.jpg" />
     <Content Include="Content\images\whitecat.jpg" />
+    <Content Include="Content\myStyle\CustomerHome.css" />
+    <Content Include="Content\PagedList.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -332,6 +344,20 @@
     <Content Include="Areas\Admin\Views\web.config" />
     <Content Include="Areas\Admin\Views\Shared\AdminLayout.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Categories\PartialV_Create_Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\PCVCreateEditProducts1.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\PVCDetailProductIndex.cshtml" />
+    <Content Include="Areas\Admin\Views\Products1\PCVListProducts1.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -390,6 +416,7 @@
     <Content Include="Views\Customers\ChangeAddress.cshtml" />
     <Content Include="Views\Customers\KhachThanThiet.cshtml" />
     <Content Include="Views\Customers\ShippingPolicy.cshtml" />
+    <Content Include="Views\Products\PVFeatureProduct.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

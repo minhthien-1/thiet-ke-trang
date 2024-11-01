@@ -1,0 +1,23 @@
+﻿@model thiet_ke_trang.Models.Product
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/AdminLayout.cshtml";
+}
+
+<h2>CẬP NHẬT SẢN PHẨM</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.ProductID)
+    @Html.Partial("PCVCreateEditProducts1", Model)
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

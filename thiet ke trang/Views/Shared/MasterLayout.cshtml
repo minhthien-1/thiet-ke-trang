@@ -160,16 +160,19 @@
         color:white;
         font-size:2.2rem;
     }
+
         .header_giohang_icon:hover {
             cursor: pointer;
             color: antiquewhite;
         }
+
     .header_search_input_ls{
         flex:1;
         height:100%;
         position:relative;
     }
-    /*.header_search_history{
+
+   /* .header_search_history{
         position:absolute;
         top:100%;
         left:0;
@@ -179,6 +182,7 @@
         box-shadow:0 1px 5px #ffffff;
         display:none;
         overflow:hidden;
+
     }*/
     /*.header_search_history_heading{
         margin:6px 12px; 
@@ -294,7 +298,6 @@
   .header_search_select_option_item span{
       font-size:1.4rem;
       color:darkgray;
-      /*margin-left:8px;*/
   }
   .header_search_select_option_item i{
       font-size:1.2rem;
@@ -335,36 +338,7 @@
     <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!--<div id="container">
-        <header>
-            <nav>
-                <ul>
-                    <li class="trang">                      
-                        <a href="~/Home/Test">GauBong.com</a>
-                    </li>       
-                    <li class="chu">
-                        <a href="">Danh mục các sản phẩm</a><i class="fa-thin fa-list"></i>
-                    </li>
-                 </ul>
-                <ul>-->
-                    @*<li class="search">
-                        <input type="text"placeholder="Nhập sản phẩm cần tìm" /><i class="fa-solid fa-magnifying-glass"></i>
-                    </li>*@
-                    <!--<li class="chu">
-                        <a href="">Giỏ hàng</a>
-                    </li>
-                    <li class="chu">
-                        <a href="">Danh sách các sản phẩm</a><i class="fa-solid fa-caret-down"></i>
-                    </li >
-                    <li class="chu">
-                        <a href="">Đăng ký|</a>
-                    </li>
-                    <li class="chu">
-                        <a href="">Đăng nhập</a> 
-                    </li>
-               </ul>
-              </nav>         
-        </header>-->
+    
     <div class="app">
         <header class="header">
             <div class="khoangcach">
@@ -394,28 +368,22 @@
                     </ul>
                 </nav>
 
-                    @*<div class="header_logo">
+                <div class="header_with_search">
+                   
+                    <div class="cuahang">
+                        <a href="~/Home/Test" class="cuahang">GAUBONG.COM</a>
+                    </div>
 
-                        <img class="header_logo" src="~/Content/images/logo.png" width="7%" />
-
-                    </div>*@
-                    <div class="header_with_search">
-
-                        <div class="cuahang">
-                            <a href="~/Home/Test" class="cuahang">GAUBONG.COM</a>
-                        </div>
-
-                        <div class="header_search">
-                            <div class="header_search_input_ls">
-                                <input type="text" class="header_search_input" placeholder="Nhập sản phẩm cần tìm: " />
-
-                            </div>
-                            <button class="header_search_btn"><i class="header_search_btn_icon fa-solid fa-magnifying-glass"></i></button>
+                    <div class="header_search">
+                        <div class="header_search_input_ls">
+                            <input type="text" class="header_search_input" placeholder="Nhập sản phẩm cần tìm: " />
 
                         </div>
-                        <div class="header_giohang">
-                            <i class="header_giohang_icon fa-solid fa-cart-shopping"></i>
-                        </div>
+                        <button class="header_search_btn"><i class="header_search_btn_icon fa-solid fa-magnifying-glass"></i></button>
+                       
+                    </div>
+                    <div class="header_giohang">
+                        <i class="header_giohang_icon fa-solid fa-cart-shopping" ></i>
                     </div>
             </div>
         </header>
