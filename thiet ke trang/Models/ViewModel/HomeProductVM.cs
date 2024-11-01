@@ -10,5 +10,6 @@ namespace thiet_ke_trang.Models.ViewModel
         public string SearchTerm { get; set; }
         public List<Product> FeatureProducts { get; set;}
         public PagedList.IPagedList<Product> NewProducts { get; set; }
+        public List<Product> FeaturesProducts { get; internal set; }
     }
 }
