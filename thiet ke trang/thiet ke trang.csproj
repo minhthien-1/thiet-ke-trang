@@ -291,6 +291,7 @@
     <Content Include="Content\images\giat-gau-bong-3.png" />
     <Content Include="Content\images\Goi-co-bien-hinh-15.jpg" />
     <Content Include="Content\images\goi-om-hai-cau-2.jpg" />
+    <Content Include="Content\images\hinh-nen-gau-cute-6.jpg" />
     <Content Include="Content\images\hinh-nen-gau-dau-24 %281%29.jpg" />
     <Content Include="Content\images\hinhnenmoi.jpg" />
     <Content Include="Content\images\logo.png" />
@@ -299,8 +300,12 @@
     <Content Include="Content\images\moc khoa bong cao %283%29.jpg" />
     <Content Include="Content\images\mockhoa3.jpg" />
     <Content Include="Content\images\mockhoa4.jpg" />
+    <Content Include="Content\images\nen 4.jpg" />
     <Content Include="Content\images\nen-nho-gau-1.png" />
     <Content Include="Content\images\nen-nho-gau-2.jpg" />
+    <Content Include="Content\images\nen5.jpg" />
+    <Content Include="Content\images\nen8.jpg" />
+    <Content Include="Content\images\nengau3.jpg" />
     <Content Include="Content\images\nenhong.jpg" />
     <Content Include="Content\images\rabit.jpg" />
     <Content Include="Content\images\tang-thiep-mien-phi-1.jpg" />
