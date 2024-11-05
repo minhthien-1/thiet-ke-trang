@@ -3,17 +3,18 @@
 }
 <style type="text/css">
     #banner {
-        background-image: url('../../content/images/nengau3.jpg');
+        background-image: url('../../content/images/nen5.jpg');
+        background-size: cover;
         background-position: center;
-        max-height: 55%;
-        min-height: 45%;
+        height: 600px;
+        object-fit:cover;
         display: flex;
         align-items: center;
         justify-content: center;
-        vertical-align: top;
         color: cornsilk;
         position: relative;
         margin: 0 50px;
+        background-repeat: no-repeat;
     }
 
     .btn {
@@ -24,29 +25,33 @@
     }
 
     .banner-content {
+        margin-top:300px;
         text-align: center;
         color: cornsilk;
     }
 
         .banner-content h2 {
-            font-size: 250%;
+            /*  font-size: 250%;
             color: deeppink;
             justify-content: center;
             align-items: center;
-            display: flex;
             position: absolute;
             top: -68%;
             right: 5%;
-            left: 5%;
+            left: 5%;*/
+            margin:0px 50px 200px 50px;
+            color: white;
+            font-size:3.5rem;
+            
+            
         }
 
         .banner-content p {
             font-size: 200%;
-            color: hotpink;
+            color: sandybrown;
             margin: -155px 55px;
             justify-content: center;
             align-items: center;
-            display: flex;
             /*position: absolute;
             top: 15%;
             right: 5%;
@@ -55,11 +60,10 @@
 
         .banner-content h3 {
             font-size: 200%;
-            color: hotpink;
+            color: saddlebrown;
             margin: 200px 55px;
             justify-content: center;
             align-items: center;
-            display: flex;
         }
 
 
@@ -142,7 +146,7 @@
     }
 
     .anh2 {
-        background-image: url('../../content/images/nenhong.jpg');
+        background-image: url('../../content/images/nen8.jpg');
         background-size: cover;
         background-position: center;
         height: 100px;
@@ -162,7 +166,7 @@
 
     .product-use h3 a {
         text-decoration: none;
-        color: #FF6683;
+        color: sandybrown;
     }
 
     h3:hover {
@@ -171,7 +175,7 @@
 
     .banner-content a {
         display: inLine-block;
-        background-color: deeppink;
+        background-color: sandybrown;
         color: white;
         text-decoration: none;
         font-weight: bold;
@@ -242,7 +246,7 @@
     .oi {
         font-size: 250%;
         text-align: center;
-        color: deeppink;
+        color: saddlebrown;
     }
 
     .banner-content h4 {
@@ -258,14 +262,17 @@
     .banner-content_bdms:hover {
         color: lightpink
     }
+    .tuade{
+        color:saddlebrown
+    }
 </style>
-<section id="banner">
+<div id="banner">
     <div class="banner-content">
         <h2>Chào mừng bạn đến với web bán gấu bông của chúng tôi</h2>
-
-        @Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")
+        <p>Hàng ngàn gấu bông đang chờ bạn đấy</p>
+        <h3>@Html.ActionLink("Bắt đầu mua sắm", "batdaumuasam", "Products")</h3>
     </div>
-</section>
+</div>
 <br />
 <section id="tienich" class="content-section">
     <div class="oi"><b>GauBong.com-Shop gấu bông đẹp và uy tín tại sư vạn hạnh</b></div>
@@ -307,7 +314,7 @@
         <br />
         <div class="slider-product-one-content">
             <div class="slider-product-one-content">
-                <h1>CÁC SẢN PHẨM NỔI BẬT</h1>
+                <h1 class="tuade">CÁC SẢN PHẨM NỔI BẬT</h1>
             </div>
             <div class="slider-product-one-content-items">
                 <div class="slider-product-one-content-item">
@@ -353,7 +360,7 @@
             </div>
         </div>
         <div class="slider-product-one-content">
-            <h1>GẤU BÔNG TỐT NGHIỆP</h1>
+            <h1 class="tuade">GẤU BÔNG TỐT NGHIỆP</h1>
         </div>
         @*Phần của Việt*@
         <div class="slider-product-one-content-items">
@@ -402,7 +409,7 @@
 
         <div class="slider-product-one-content">
             <div class="slider-product-one-content">
-                <h1>GẤU BÔNG SINH NHẬT</h1>
+                <h1 class="tuade">GẤU BÔNG SINH NHẬT</h1>
 
             </div>
             <div class="slider-product-one-content-items">
@@ -453,7 +460,7 @@
 
         <div class="slider-product-one-content">
             <div class="slider-product-one-content">
-                <h1>GỐI BÔNG & PHỤ KIỆN</h1>
+                <h1 class="tuade">GỐI BÔNG & PHỤ KIỆN</h1>
             </div>
         </div>
         @*Phần của Bảo*@
@@ -506,7 +513,7 @@
 
         <div class="slider-product-one-content">
             <div class="slider-product-one-content">
-                <h1>MÓC KHÓA THÚ BÔNG</h1>
+                <h1 class="tuade">MÓC KHÓA THÚ BÔNG</h1>
             </div>
             @*Phần của Thiện*@
             <div class="slider-product-one-content-items">
