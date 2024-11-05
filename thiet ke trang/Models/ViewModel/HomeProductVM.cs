@@ -8,7 +8,7 @@ namespace thiet_ke_trang.Models.ViewModel
     public class HomeProductVM
     {
         public string SearchTerm { get; set; }
-        public List<Product> FeatureProducts { get; set;}
+        public List<Product> FeaturesProducts { get; set;}
         public PagedList.IPagedList<Product> NewProducts { get; set; }
     }
 }
