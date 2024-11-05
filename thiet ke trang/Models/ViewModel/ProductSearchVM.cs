@@ -14,7 +14,7 @@ namespace thiet_ke_trang.Models.ViewModel
         public string SortOrder { get; set; }
         public int PageNumber { get;set; }
         public int PageSize { get; set; } = 10;
-        public PagedList.IPagedList<Product>Products { get; set; }
-        //public List<Product> Products { get; set;}
+        //public PagedList.IPagedList<Product>Products { get; set; }
+        public List<Product> Products { get; set;}
     }
 }

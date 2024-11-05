@@ -55,7 +55,6 @@ namespace thiet_ke_trang.Areas.Admin.Controllers
             model.SortOrder = SortOrder;
             int pageNumber = page ?? 1;
             int pagesize = 2;
-            model.Products=products.ToPagedList(pageNumber, pagesize);
                 //model.Products = products.ToList();
             return View(model);
         }

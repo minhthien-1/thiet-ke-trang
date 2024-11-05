@@ -1,0 +1,54 @@
+﻿@model thiet_ke_trang.Models.ViewModel.ProductSearchVM
+@{
+    ViewBag.Title = "PVListProduct";
+    Layout = "~/Views/Shared/MasterLayout.cshtml";
+}
+<head>
+    <style>
+        img {
+            height: 150px;
+            max-width: 150px;
+        }
+    </style>
+</head>
+<!--Hiển thị danh sách sản phẩm-->
+@if (Model.Products != null && Model.Products.Any())
+{
+    <h2 class="bg-success">DANH SÁCH SẢN PHẨM</h2>
+    <table>
+        <thread>
+            <tr>
+                <th>Hình ảnh</th>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Danh mục</th>
+                <th></th>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach (var product in Model.Products)
+            {
+                <tr>
+                    <td><img src="@Html.DisplayFor(modelItem =>product.ProductImage)" /></td>
+                    <td>@Html.DisplayFor(modelItem => product.ProductName) </td>
+                    <td>@Html.DisplayFor(modelItem => product.ProductPrice) </td>
+                    <td>@Html.DisplayFor(modelItem => product.Category.CategoryName) </td>
+                    <td>
+                        @Html.ActionLink("Sửa", "Edit", new { id = product.ProductID }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Chi tiết", "Details", new { id = product.ProductID }, new { @class = "btn btn-primary btn-sm" })
+                        @Html.ActionLink("Xóa", "Delete", new { id = product.ProductID }, new { @class = "btn btn-primary btn-sm" })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Không tìm được sản phẩm nào phù hợp.</p>
+}
+<div class="form-group">
+    <div>
+        @Html.ActionLink("Thêm mới", "Create", null, new { @class = "btn btn primary" })
+    </div>
+</div>

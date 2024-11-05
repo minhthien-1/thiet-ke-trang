@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Ajax.Utilities;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -7,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using thiet_ke_trang.Models;
+using thiet_ke_trang.Models.ViewModel;
 
 namespace thiet_ke_trang.Controllers
 {
@@ -15,12 +17,19 @@ namespace thiet_ke_trang.Controllers
         private MyStoreEntities db = new MyStoreEntities();
 
         // GET: Products
-        public ActionResult Index()
+        public ActionResult Index(string searchTerm)
         {
-            var products = db.Products.Include(p => p.Category);
-            return View(products.ToList());
+            var model = new ProductSearchVM();
+            var products = db.Products.AsQueryable();
+            if (!string.IsNullOrEmpty(searchTerm))
+            {   //Tìm kiếm sản phẩm dựa trên từ khóa 
+                products = products.Where(p =>
+                    p.ProductName.Contains(searchTerm) |
+                    p.Category.CategoryName.Contains(searchTerm));
+            }
+            model.Products = products.ToList();
+            return View(model);
         }
-
         // GET: Products/Details/5
         public ActionResult Details(int? id)
         {
