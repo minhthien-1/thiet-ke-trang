@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using thiet_ke_trang.Models;
 using thiet_ke_trang.Models.ViewModel;
+using PagedList;
 namespace thiet_ke_trang.Controllers
 {
     public class HomeController : Controller
@@ -14,6 +15,7 @@ namespace thiet_ke_trang.Controllers
         {
             var model = new HomeProductVM();
             var products = db.Products.AsQueryable();
+            //Tìm kiếm sản phẩm dựa trên từ khóa
             if(!string.IsNullOrEmpty(searchTerm) )
             {
                 model.SearchTerm = searchTerm;
@@ -21,7 +23,11 @@ namespace thiet_ke_trang.Controllers
                     p.ProductDecription.Contains(searchTerm)||
                     p.Category.CategoryName.Contains(searchTerm));
             }
+    
+
+            //Lấy top 10 sp bán chạy nhất
             model.FeaturesProducts = products.OrderByDescending(p => p.OrderDetails.Count()).Take(10).ToList();
+           
             return View(model);
         }
 
